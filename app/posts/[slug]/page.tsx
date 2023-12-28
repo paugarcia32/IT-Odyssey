@@ -5,6 +5,7 @@ import getPostMetadata from "@/components/getPostMetadata";
 import TOC from "@/components/TOC"
 import { SearchIcon, TagIcon } from '@/components/icons';
 import { Chip, Image } from '@nextui-org/react';
+import DownloadButton from "@/components/downloadButton";
 
 const getPostContent = (slug: string) => {
   const folder = "posts/";
@@ -47,6 +48,13 @@ const PostPage = (props: any) => {
         >
           <Markdown>{post.content}</Markdown>
         </article>
+        <div className="font-body mb-10">
+          <p className="mb-4">If you liked this post, you can download it in PDF format!</p>
+          <div className="px-40">
+            <DownloadButton slug={slug} />
+          </div>
+
+        </div>
       </div>
     </div>
   );
