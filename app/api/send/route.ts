@@ -11,7 +11,7 @@ export async function POST(req: any) {
     const body = await req.json()
     const { name, email,subject, message } = body;
     const data = await resend.emails.send({
-      from: `${name} <onboarding@resend.dev>`,
+      from: `${name} <form@itodyssey.dev>`,
       to: ['paugarcia32@gmail.com'],
       subject: `${subject}>`,
       react: EmailTemplate({ name, email,subject, message }),
