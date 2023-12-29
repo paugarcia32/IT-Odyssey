@@ -37,7 +37,9 @@ export default function Footer(){
             </div>
 
         </div>
-
+        <div className="text-sm mt-2">
+          <p>@{new Date().getFullYear()} Pau Garcia. All rights reserved.</p>
+        </div>
 
       </div>
     </footer>

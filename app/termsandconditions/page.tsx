@@ -13,7 +13,7 @@ export default function TermsAndConditions() {
             <p className="mb-4">
               Welcome to My Dev Journey! These terms and conditions outline the
               rules and regulations for the use of My Dev Journey's Website,
-              located at <a className="hover:underline text-accent" href="www.mydevjourney.com" rel="external nofollow noopener" target="_blank">www.mydevjourney.com</a>.
+              located at <a className="hover:underline text-accent" href="www.itodyssey.dev" rel="external nofollow noopener" target="_blank">www.itodyssey.dev</a>.
             </p>
             <p className="mb-4">
               By accessing this website we assume you accept these terms and
