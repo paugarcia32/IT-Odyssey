@@ -4,7 +4,7 @@ import matter from "gray-matter";
 import getPostMetadata from "@/components/getPostMetadata";
 import TOC from "@/components/TOC"
 import { SearchIcon, TagIcon } from '@/components/icons';
-import { Chip, Image } from '@nextui-org/react';
+import { Chip, Image, Divider } from '@nextui-org/react';
 import DownloadButton from "@/components/downloadButton";
 
 const getPostContent = (slug: string) => {
@@ -27,7 +27,7 @@ const PostPage = (props: any) => {
   const post = getPostContent(slug);
   return (
     <div className="">
-      <div className="my-12 text-center">
+      <div className="my-12 text-center items-center">
         <h1 className="text-2xl font-title ">{post.data.title}</h1>
         <p className="text-slate-400 mt-2">{post.data.date}</p>
       </div>
@@ -49,6 +49,7 @@ const PostPage = (props: any) => {
           <Markdown>{post.content}</Markdown>
         </article>
         <div className="font-body mb-10">
+          <Divider className="my-4" />
           <p className="mb-4">If you liked this post, you can download it in PDF format!</p>
           <div className="px-40">
             <DownloadButton slug={slug} />
