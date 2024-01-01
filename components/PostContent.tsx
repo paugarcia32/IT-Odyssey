@@ -42,19 +42,19 @@ const PostContent: React.FC<PostContentProps> = ({ posts }) => {
     <div>
       <div className='md:flex md:flex-row grid grid-cols-1 justify-items-center md:justify-between items-center text-center'>
         <Input
-        className='mb-4 md:mb-0 '
+          className='mb-4 md:mb-0'
+          color='default'
           type="text"
-          placeholder="Search Posts..."
-          // labelPlacement="outside"
+          placeholder="Search Posts ..."
           startContent={
             <SearchIcon className="text-2xl pointer-events-none flex-shrink-0 text-primary" />
           }
-
           onChange={(e) => setSearchTerm(e.target.value)}
         />
 
         <Select
           className="md:ml-4"
+          color='default'
           placeholder="Filter by Tag"
           value={selectedTag || ''}
           onChange={handleTagChange}

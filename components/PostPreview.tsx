@@ -8,7 +8,8 @@ const PostPreview = (props: PostMetadata) => {
   return (
     <Card
       isBlurred
-      className="border-none bg-background/60 dark:bg-default-100/50 max-w-[610px]"
+      // className="border-none bg-background/60 dark:bg-default-100/50 max-w-[610px]"
+      className="border-none bg-secondary dark:bg-secondary max-w-[610px]"
       shadow="sm"
     >
       <CardBody>
