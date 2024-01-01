@@ -36,19 +36,27 @@ const Resources = () => {
           In this project, we have used <a className="text-accent hover:underline" href="https://nextjs.org/">NextJS</a> with <a className="text-accent hover:underline" href="https://www.typescriptlang.org/">Typescript</a>. Also, we have used <a className="text-accent hover:underline" href="https://nextui.org/">Next UI</a> for some nice looking UI components combined with <a className="text-accent hover:underline" href="https://tailwindcss.com/">Tailwind CSS</a>.
         </p>
           <div className="flex flex-col items-center">
-            <SiNextdotjs size={48} />
+            <a className="hover:text-accent" href="https://nextjs.org/">
+              <SiNextdotjs size={48} />
+            </a>
             <p>Next.js</p>
           </div>
           <div className="flex flex-col items-center">
-            <SiTypescript size={48} />
+            <a className="hover:text-accent hover:underline" href="https://www.typescriptlang.org/">
+              <SiTypescript size={48} />
+            </a>
             <p>Typescript</p>
           </div>
           <div className="flex flex-col items-center">
-            <SiTailwindcss size={48} />
+            <a className="hover:text-accent hover:underline" href="https://tailwindcss.com/">
+              <SiTailwindcss size={48} />
+            </a>
             <p>Tailwind CSS</p>
           </div>
           <div className="flex flex-col items-center">
-            <SiNextui size={48} />
+            <a className="hover:text-accent hover:underline" href="https://nextui.org/">
+              <SiNextui size={48} />
+            </a>
             <p>Next UI</p>
           </div>
         </div>
@@ -149,7 +157,7 @@ const Resources = () => {
                 <h1 className="sm p-4">
                   <b>{typography.type}</b>
                 </h1>
-                <a href={typography.link} target="_blank" rel="noopener noreferrer">
+                <a href={typography.link} target="_blank" rel="noopener noreferrer" className="hover:text-accent hover:underline">
                   Google Fonts
                 </a>
               </CardFooter>
