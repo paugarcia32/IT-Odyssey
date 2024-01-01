@@ -48,7 +48,7 @@ const PostPage = (props: any) => {
         >
           <Markdown>{post.content}</Markdown>
         </article>
-        <div className="font-body mb-10">
+        <div className="font-body mb-10 items-center text-center">
           <Divider className="my-4" />
           <p className="mb-4">If you liked this post, you can download it in PDF format!</p>
           <div className="px-40">
