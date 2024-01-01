@@ -23,7 +23,7 @@ const handleSelectionChange = (key: Key) => {
     <Fragment>
       <section className="bg-background min-h-screen p-12 items-center">
         <div className="grid justify-around lg:flex ">
-          <div className="  mb-10">
+          <div className="mb-10 ">
                 <Image
                 isBlurred
                 height={400}
@@ -32,7 +32,7 @@ const handleSelectionChange = (key: Key) => {
                 className="max-w-lg"
               />
           </div>
-          <div className="flex max-w-lg min-w-lg flex-col items-center md:ml-10">
+          <div className="flex max-w-lg min-w-lg flex-col items-center lg:ml-10">
             <Tabs
               aria-label="Options"
               selectedKey={selected}
@@ -91,19 +91,19 @@ const handleSelectionChange = (key: Key) => {
 
                       <div className="grid grid-cols-2 mt-0.5">
                         <div className="mb-7 mr-5">
-                          <Progress label="Developer" value={55}  className="max-w-md" />
+                          <Progress label="Typescript" value={80}  className="max-w-md" />
                         </div>
 
                         <div className="mb-7 mr-5">
-                          <Progress label="Designer" value={55}  className="max-w-md" />
+                          <Progress label="Java" value={50}  className="max-w-md" />
                         </div>
 
                       <div className="mb-7 mr-5">
-                          <Progress label="Designer" value={55}  className="max-w-md" />
+                          <Progress label="Flutter" value={70}  className="max-w-md" />
                         </div>
 
                         <div className="mb-7 mr-5">
-                          <Progress label="Designer" value={55}  className="max-w-md" />
+                          <Progress label="C#" value={20}  className="max-w-md" />
                         </div>
                       </div>
                   </CardBody>
