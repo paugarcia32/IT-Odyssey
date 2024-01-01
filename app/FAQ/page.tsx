@@ -5,10 +5,10 @@ import {Accordion, AccordionItem} from "@nextui-org/react";
 export default function FAQ() {
     const itemClasses = {
       base: "py-0 max-w",
-      title: "font-normal text-medium",
-      trigger: "px-2 py-0 data-[hover=true]:bg-accent rounded-lg h-14 flex items-center",
-      indicator: "text-blod",
-      content: "text-small px-0",
+      title: "font-semibold text-lg",
+      trigger: "py-0  rounded-lg h-14",
+      indicator: "text-blod ",
+      content: "text-small max-w-[400]",
     };
 
     const Q1 =
@@ -26,11 +26,10 @@ export default function FAQ() {
 
   return (
       <div className="max-w-4xl m-0 mx-auto leading-relaxed p-20">
-
           <h1 className="text-4xl font-bold mb-5 font-title">Frequently Asked Questions</h1>
           <div className="w-20 text-left h-0.5 bg-accent mb-5"></div>
-            <div className=" w-full font-body">
-                <Accordion variant="shadow" itemClasses={itemClasses} showDivider={false}>
+            <div className="max-w-xl w-xl font-body">
+                <Accordion selectionMode="multiple" variant="shadow" itemClasses={itemClasses} showDivider={false} className="max-w-[500]" fullWidth={false}>
                   <AccordionItem key="1" aria-label="Q1" title="How many people work on this blog?">
                     {Q1}
                   </AccordionItem>
