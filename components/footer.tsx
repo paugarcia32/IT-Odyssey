@@ -2,7 +2,7 @@ import NextLink from "next/link";
 import { Logo } from "@/components/icons";
 export default function Footer(){
   return (
-    <footer className="bg-secondary dark:bg-secondary font-body w-full">
+    <footer className="bg-secondary dark:bg-secondary font-body w-svw">
       <div
         className=" max-w-7xl m-auto flex flex-col p-16 "
       >

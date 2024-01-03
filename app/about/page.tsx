@@ -20,16 +20,16 @@ const handleSelectionChange = (key: Key) => {
 };
   // useScrollToTop();
   return (
-    <Fragment>
-      <section className="bg-background min-h-screen p-12 items-center">
+    <div className="max-w-4xl m-0 mx-auto leading-relaxed p-2 md:p-10 lg:p-20 font-body">
+      <section className="bg-background min-h-screen items-center">
         <div className="grid justify-around lg:flex ">
-          <div className="mb-10 ">
+          <div className="mb-10">
                 <Image
-                isBlurred
+                // isBlurred
                 height={400}
                 src="profile.jpg"
                 alt="NextUI Album Cover"
-                className="max-w-lg"
+                className="max-w-sm md:max-w-md lg:max-w-lg"
               />
           </div>
           <div className="flex max-w-lg min-w-lg flex-col items-center lg:ml-10">
@@ -168,6 +168,6 @@ const handleSelectionChange = (key: Key) => {
           </div>
         </div>
       </section>
-    </Fragment>
+    </div>
   );
 }
