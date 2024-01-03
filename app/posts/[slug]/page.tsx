@@ -26,7 +26,7 @@ const PostPage = (props: any) => {
   const slug = props.params.slug;
   const post = getPostContent(slug);
   return (
-    <div className="max-w-fit">
+    <div className="max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-screen-2xl">
       <div className="my-12 text-center items-center">
         <h1 className="text-2xl font-title ">{post.data.title}</h1>
         <p className="text-slate-400 mt-2">{post.data.date}</p>
