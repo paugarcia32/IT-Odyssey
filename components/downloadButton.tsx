@@ -9,7 +9,7 @@ interface DownloadButtonProps {
 
 const DownloadButton = (props: DownloadButtonProps) => {
   // const PDFFile = window.location.origin + `/docs/${props.slug}.pdf`;
-  const baseURL = 'https://it-odyssey.vercel.app';
+  const baseURL = 'https://www.itodyssey.dev';
   // const baseURL = process.env.BASE_URL || 'http://localhost:3000';
   const PDFFile = `${baseURL}/docs/${props.slug}.pdf`;
 

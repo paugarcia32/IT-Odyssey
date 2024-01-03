@@ -25,7 +25,7 @@ export default function FAQ() {
 
 
   return (
-      <div className="max-w-4xl m-0 mx-auto leading-relaxed p-20">
+      <div className="max-w-4xl m-0 mx-auto leading-relaxed p-2 md:p-10 lg:p-20">
           <h1 className="text-4xl font-bold mb-5 font-title">Frequently Asked Questions</h1>
           <div className="w-20 text-left h-0.5 bg-accent mb-5"></div>
             <div className="max-w-xl w-xl font-body">
