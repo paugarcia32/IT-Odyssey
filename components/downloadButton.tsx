@@ -28,7 +28,7 @@ const DownloadButton = (props: DownloadButtonProps) => {
   };
 
   return (
-      <Button radius="md" className="bg-accent hover:bg-primary text-background  font-body" onClick={handleDownloadClick} startContent={<DownloadIcon/>}>
+      <Button radius="md" className="bg-accent-500 hover:bg-accent-600 text-background dark:bg-accent-400 dark:hover:accent-300  font-body" onClick={handleDownloadClick} startContent={<DownloadIcon/>}>
         Download PDF
       </Button>
   );

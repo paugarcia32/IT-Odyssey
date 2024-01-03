@@ -9,7 +9,7 @@ const PostPreview = (props: PostMetadata) => {
     <Card
       isBlurred
       // className="border-none bg-background/60 dark:bg-default-100/50 max-w-[610px]"
-      className="border-none bg-secondary dark:bg-secondary max-w-[610px]"
+      className="border-none bg-secondary-50 dark:bg-secondary max-w-[610px]"
       shadow="sm"
     >
       <CardBody>
@@ -29,13 +29,13 @@ const PostPreview = (props: PostMetadata) => {
               <div className="flex flex-col gap-0">
                 <p className="text-small text-foreground/80">{props.date}</p>
                   <Link href={`/posts/${props.slug}`}>
-                    <h2 className=" hover:underline font-title mb-2">{props.title}</h2>
+                    <h2 className="text-accent hover:underline font-title mb-2">{props.title}</h2>
                   </Link>
               </div>
             </div>
             <div className="flex justify-start items-center gap-2 flex-wrap">
                   {props.tags.map((tag, index) => (
-                  <Chip key={index} className="bg-primary" size='sm' ><h3 className="font-semibold">{tag}</h3></Chip>
+                  <Chip key={index} className="bg-accent-50 border border-accent-400 dark:bg-accent-950 dark:border-accent-600" size='sm' ><h3 className="font-semibold">{tag}</h3></Chip>
                 ))}
                 </div>
             <div className="flex flex-col mt-2 gap-1">

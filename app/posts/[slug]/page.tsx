@@ -36,7 +36,7 @@ const PostPage = (props: any) => {
         <div className="flex justify-start items-center gap-2 flex-wrap mb-4">
           <TagIcon />
           {post.data.tags && post.data.tags.length > 0 && post.data.tags.map((tag: string, index: number) => (
-            <Chip key={index} className="bg-primary" size='sm'>
+            <Chip key={index} className="bg-accent-50 border border-accent-400 dark:bg-accent-950 dark:border-accent-600" size='sm'>
               <h1 className="font-semibold">{tag}</h1>
             </Chip>
           ))}

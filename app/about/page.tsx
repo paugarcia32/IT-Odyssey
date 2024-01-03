@@ -91,19 +91,32 @@ const handleSelectionChange = (key: Key) => {
 
                       <div className="grid grid-cols-2 mt-0.5">
                         <div className="mb-7 mr-5">
-                          <Progress label="Typescript" value={80}  className="max-w-md" />
+                          <Progress isStriped classNames={{
+                            track: "drop-shadow-md border border-default",
+                            indicator: "bg-gradient-to-r from-accent-300 to-accent-500",
+                          }}
+                          label="Typescript" value={80}  className="max-w-md" />
                         </div>
 
                         <div className="mb-7 mr-5">
-                          <Progress label="Java" value={50}  className="max-w-md" />
+                          <Progress classNames={{
+                            track: "drop-shadow-md border border-default",
+                            indicator: "bg-accent",
+                          }} label="Java" value={50}  className="max-w-md" />
                         </div>
 
                       <div className="mb-7 mr-5">
-                          <Progress label="Flutter" value={70}  className="max-w-md" />
+                          <Progress isStriped classNames={{
+                            track: "drop-shadow-md border border-default",
+                            indicator: "bg-gradient-to-r from-accent-300 to-accent-500",
+                          }} label="Flutter" value={70}  className="max-w-md" />
                         </div>
 
                         <div className="mb-7 mr-5">
-                          <Progress label="C#" value={20}  className="max-w-md" />
+                          <Progress isStriped classNames={{
+                            track: "drop-shadow-md border border-default",
+                            indicator: "bg-gradient-to-r from-accent-300 to-accent-500",
+                          }} label="C#" value={20}  className="max-w-md" />
                         </div>
                       </div>
                   </CardBody>

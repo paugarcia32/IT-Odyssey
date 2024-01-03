@@ -2,13 +2,13 @@ import NextLink from "next/link";
 import { Logo } from "@/components/icons";
 export default function Footer(){
   return (
-    <footer className="bg-secondary font-body ">
+    <footer className="bg-secondary dark:bg-secondary font-body w-full">
       <div
         className=" max-w-7xl m-auto flex flex-col p-16 "
       >
         <div className="lg:flex lg:flex-row grid grid-cols-1 md:grid-cols-2 flex-wrap lg:justify-between md:justify-items-center items-start w-full text-left mb-0.5">
                   {/* <!-- List Container --> */}
-          <div className="w-1/2 md:w-40 m-1  flex flex-col justify-start mb-5 min-w-max">
+          <div className="w-1/2 md:w-40 m-1  flex flex-col justify-start mb-5 min-w-max hover:text-accent">
             <NextLink className="flex justify-start items-center gap-1" href="/">
               <Logo/>
               <p className="font-bold lg:text-xl text-lg">IT Odyssey</p>
