@@ -25,26 +25,25 @@ export default function FAQ() {
 
 
   return (
-      <div className="max-w-4xl m-0 mx-auto leading-relaxed p-2 md:p-10 lg:p-20">
-          <h1 className="text-4xl font-bold mb-5 font-title">Frequently Asked Questions</h1>
-          <div className="w-20 text-left h-0.5 bg-accent mb-5"></div>
-            <div className="max-w-xl w-xl font-body">
-                <Accordion selectionMode="multiple" variant="shadow" itemClasses={itemClasses} showDivider={false} className="max-w-[500]" fullWidth={false}>
-                  <AccordionItem key="1" aria-label="Q1" title="How many people work on this blog?">
-                    {Q1}
-                  </AccordionItem>
-                  <AccordionItem key="2" aria-label="Q2" title="How often do you publish new blog posts?">
-                    {Q2}
-                  </AccordionItem>
-                  <AccordionItem key="3" aria-label="Q3" title="Is user data collected on this blog?">
-                    {Q3}
-                  </AccordionItem>
-                  <AccordionItem key="4" aria-label="Q4" title="What topics do you cover in your blog posts?">
-                    {Q4}
-                  </AccordionItem>
-                </Accordion>
-            </div>
-
+    <div className="max-w-4xl m-0 mx-auto leading-relaxed p-2 md:p-10 lg:p-20">
+      <h1 className="text-4xl font-bold mb-5 font-title">Frequently Asked Questions</h1>
+      <div className="w-20 text-left h-0.5 bg-accent mb-5"></div>
+        <div className="max-w-xl w-xl font-body">
+          <Accordion selectionMode="multiple" variant="shadow" itemClasses={itemClasses} showDivider={false} className="max-w-[500] mb-15 md:mb-5" fullWidth={false}>
+            <AccordionItem key="1" aria-label="Q1" title="How many people work on this blog?">
+              {Q1}
+            </AccordionItem>
+            <AccordionItem key="2" aria-label="Q2" title="How often do you publish new blog posts?">
+              {Q2}
+            </AccordionItem>
+            <AccordionItem key="3" aria-label="Q3" title="Is user data collected on this blog?">
+              {Q3}
+            </AccordionItem>
+            <AccordionItem key="4" aria-label="Q4" title="What topics do you cover in your blog posts?">
+              {Q4}
+            </AccordionItem>
+          </Accordion>
       </div>
+    </div>
   );
 }
