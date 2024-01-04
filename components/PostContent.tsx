@@ -9,7 +9,7 @@ interface PostContentProps {
   posts: PostMetadata[];
 }
 
-const PAGE_SIZE = 3;
+const PAGE_SIZE = 6;
 
 const PostContent: React.FC<PostContentProps> = ({ posts }) => {
   const [searchTerm, setSearchTerm] = useState('');
@@ -40,7 +40,8 @@ const PostContent: React.FC<PostContentProps> = ({ posts }) => {
 
   return (
     <div>
-      <div className='md:flex md:flex-row grid grid-cols-1 justify-items-center md:justify-between items-center text-center'>
+
+      <div className='md:flex md:flex-row grid grid-cols-1 mx-10 md:mx-0 justify-items-center md:justify-between items-center text-center'>
         <Input
           className='mb-4 md:mb-0'
           color='default'
@@ -69,7 +70,7 @@ const PostContent: React.FC<PostContentProps> = ({ posts }) => {
           ))}
         </Select>
       </div>
-      <div className="grid grid-cols-1 gap-4 my-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 md:max-w-2xl gap-4 my-10">
         {currentPosts.map((post) => (
           <PostPreview key={post.slug} {...post} />
         ))}
