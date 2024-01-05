@@ -21,12 +21,11 @@ export default function ContactForm() {
     message: event.target.message.value,
   };
 
-      // Validación de email con expresión regular
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailPattern.test(data.email)) {
       setLoading(false);
       setEmailError(true);
-      return; // Sale de la función si el email no es válido
+      return;
     } else {
       setEmailError(false);
     }
@@ -64,77 +63,26 @@ export default function ContactForm() {
       <h2 className="font-bold text-xl py-4 font-title">Create a New Message</h2>
       <form onSubmit={handleSubmit}>
       <div className='py-2 w-full'>
-        {/* <input
-          placeholder="Name"
-          type="text"
-          name="name"
-          minLength={3}
-          maxLength={150}
-          required
-          className='border border-primary bg-background rounded px-8 py-1 font-body'
-          autoComplete="off"
-          id="name"
-        /> */}
-
           <Input isRequired size='lg' type="text" label="Name" placeholder="Enter your name" id="name" className="min-w-max"/>
 
 
       </div>
       <div className='py-2'>
-        {/* <input
-          placeholder="Email Address"
-          type="email"
-          minLength={5}
-          maxLength={150}
-          required
-          className='border border-primary bg-background rounded px-8 py-1 font-body'
-          autoComplete="off"
-          id="email"
-        /> */}
         <Input isRequired size='lg' type="enail" label="Email" placeholder="Enter your email" id="email" errorMessage={emailError  && "Please enter a valid email"} className="min-w-max"/>
       </div>
       <div className='py-2'>
-        {/* <input
-          placeholder="Subject"
-          type="text"
-          minLength={5}
-          maxLength={150}
-          required
-          className='border border-primary bg-background rounded px-8 py-1 font-body'
-          autoComplete="off"
-          id="subject"
-        /> */}
-        <Input isRequired size='lg' type="text" label="Subject" placeholder="Enter a email subject" id="subject" className="min-w-max"/>
+       <Input isRequired size='lg' type="text" label="Subject" placeholder="Enter a email subject" id="subject" className="min-w-max"/>
       </div>
       <div className='py-2 max-h-full'>
-        {/* <textarea
-          placeholder="Message"
-          rows={4}
-          required
-          minLength={10}
-          maxLength={500}
-          name="message"
-          className='border border-primary bg-background rounded px-8 py-1 font-body'
-        /> */}
-
-        <Textarea
+              <Textarea
           isRequired
           label="Message"
-          // labelPlacement="outside"
           placeholder="Enter your message"
           className="min-w-max"
           name="message"
         />
       </div>
-      {/* <button
-        type="submit"
-        disabled={loading}
-        className="bg-accent hover:bg-primary text-background px-5 py-1 rounded font-body"
-      >
-        Send Message
-      </button> */}
-
-      <Button type="submit" className="bg-accent hover:bg-primary text-background px-5 py-1 rounded font-body" startContent={<SendIcon/>}>
+           <Button type="submit" className="bg-accent hover:bg-primary text-background px-5 py-1 rounded font-body" startContent={<SendIcon/>}>
         Send Message
       </Button>
     </form>
