@@ -59,13 +59,11 @@ export default function ContactForm() {
     }
 
   return (
-    <div className='bg-secondary p-5 m-0-auto max-w-md min-w-md max-h-max rounded-xl shadow-lg place-self-center font-body'>
+    <div className='bg-secondary p-5 rounded-xl shadow-lg font-body w-full max-w-xl'>
       <h2 className="font-bold text-xl py-4 font-title">Create a New Message</h2>
       <form onSubmit={handleSubmit}>
       <div className='py-2 w-full'>
           <Input isRequired size='lg' type="text" label="Name" placeholder="Enter your name" id="name" className="min-w-max"/>
-
-
       </div>
       <div className='py-2'>
         <Input isRequired size='lg' type="enail" label="Email" placeholder="Enter your email" id="email" errorMessage={emailError  && "Please enter a valid email"} className="min-w-max"/>
