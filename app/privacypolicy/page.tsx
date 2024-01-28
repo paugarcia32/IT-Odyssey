@@ -5,11 +5,17 @@ import TOC from "@/components/TOC"
 
 export default function TermsAndConditions() {
   return(
-    <div className="max-w-4xl m-0 mx-auto leading-relaxed p-2 md:p-10 lg:p-20 font-body">
+    <div className="max-w-6xl m-0 mx-auto leading-relaxed p-2 md:p-10 lg:p-20 font-body">
           <h1 className="text-4xl font-bold mb-5 font-title">Privacy Policy</h1>
           <div className="w-20 text-left h-0.5 bg-accent mb-5"></div>
-          <TOC />
-          <div className="content">
+          <div className="md:flex md:mt-10">
+            <div className="md:w-1/4">
+              <div className="md:sticky md:top-12">
+                {/* Ajusta el valor de md:top-10 según tus necesidades */}
+                <TOC />
+              </div>
+            </div>
+            <div className="md:w-3/4 md:pl-8">
             <p className="mb-4">
               Last updated: August 02, 2023
             </p>
@@ -197,6 +203,9 @@ export default function TermsAndConditions() {
 
 
           </div>
+          </div>
+
+
 
     </div>
   )
