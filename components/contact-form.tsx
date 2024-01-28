@@ -59,7 +59,7 @@ export default function ContactForm() {
     }
 
   return (
-    <div className='bg-secondary p-5 rounded-xl shadow-lg font-body w-full max-w-xl'>
+    <div className='bg-secondary p-5 rounded-xl shadow-lg font-body w-lg max-w-xl'>
       <h2 className="font-bold text-xl py-4 font-title">Create a New Message</h2>
       <form onSubmit={handleSubmit}>
       <div className='py-2 w-full'>
@@ -80,7 +80,7 @@ export default function ContactForm() {
           name="message"
         />
       </div>
-           <Button type="submit" className="bg-accent hover:bg-primary text-background px-5 py-1 rounded font-body" startContent={<SendIcon/>}>
+      <Button type="submit" className="bg-accent hover:bg-primary text-background px-5 py-1 rounded font-body" startContent={<SendIcon/>}>
         Send Message
       </Button>
     </form>
