@@ -22,14 +22,14 @@ const handleSelectionChange = (key: Key) => {
   return (
     <div className="max-w-4xl m-0 mx-auto leading-relaxed p-2 md:p-10 lg:p-20 font-body">
       <section className="bg-background min-h-screen items-center">
-        <div className="grid justify-around lg:flex ">
+        <div className="grid lg:flex">
           <div className="mb-10">
                 <Image
                 // isBlurred
                 height={400}
                 src="profile.jpg"
                 alt="NextUI Album Cover"
-                className="max-w-sm md:max-w-md lg:max-w-lg"
+                className="max-w-sm md:max-w-md lg:max-w-lg "
               />
           </div>
           <div className="flex max-w-lg min-w-lg flex-col items-center lg:ml-10">
@@ -91,7 +91,7 @@ const handleSelectionChange = (key: Key) => {
 
                       <div className="grid grid-cols-2 mt-0.5">
                         <div className="mb-7 mr-5">
-                          <Progress isStriped classNames={{
+                          <Progress classNames={{
                             track: "drop-shadow-md border border-default",
                             indicator: "bg-gradient-to-r from-accent-300 to-accent-500",
                           }}
@@ -101,19 +101,19 @@ const handleSelectionChange = (key: Key) => {
                         <div className="mb-7 mr-5">
                           <Progress classNames={{
                             track: "drop-shadow-md border border-default",
-                            indicator: "bg-accent",
+                            indicator: "bg-gradient-to-r from-accent-300 to-accent-500",
                           }} label="Java" value={50}  className="max-w-md" />
                         </div>
 
                       <div className="mb-7 mr-5">
-                          <Progress isStriped classNames={{
+                          <Progress classNames={{
                             track: "drop-shadow-md border border-default",
                             indicator: "bg-gradient-to-r from-accent-300 to-accent-500",
                           }} label="Flutter" value={70}  className="max-w-md" />
                         </div>
 
                         <div className="mb-7 mr-5">
-                          <Progress isStriped classNames={{
+                          <Progress classNames={{
                             track: "drop-shadow-md border border-default",
                             indicator: "bg-gradient-to-r from-accent-300 to-accent-500",
                           }} label="C#" value={20}  className="max-w-md" />
