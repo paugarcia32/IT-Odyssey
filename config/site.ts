@@ -23,7 +23,4 @@ export const siteConfig = {
       href: "/about",
     }
 	],
-	links: {
-		github: "https://github.com/paugarcia32",
-	},
 };
