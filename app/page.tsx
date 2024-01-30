@@ -7,7 +7,8 @@ const HomePage = () => {
 
 
   return (
-    <div className="grid grid-cols gap-4 mb-10">
+    // <div className="grid grid-cols gap-4 mb-10">
+    <div>
       <PostContent posts={postMetadata} />
     </div>
   );
