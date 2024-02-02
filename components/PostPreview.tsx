@@ -15,7 +15,8 @@ const PostPreview = (props: PostMetadata) => {
               width="100%"
               alt={props.title}
               className="w-full object-cover h-[160px]"
-              src={props.banner}
+              // src={props.banner}
+              src={`/${props.banner}`}
 
             />
           </div>
@@ -24,11 +25,11 @@ const PostPreview = (props: PostMetadata) => {
               <div className="flex flex-col gap-0">
                  <div className="flex justify-start items-center gap-2 flex-wrap">
                    {props.tags.map((tag, index) => (
-                   <Chip key={index} className="bg-accent-50 border border-accent-400 dark:bg-accent-950 dark:border-accent-600" size='sm' ><h3 className="font-semibold">{tag}</h3></Chip>
+                   <Chip key={index} className="bg-accent-50 border border-accent-400 dark:bg-accent-950 dark:border-accent-600" size='sm' ><p className="font-semibold">{tag}</p></Chip>
                  ))}
                  </div>
                    <Link href={`/posts/${props.slug}`}>
-                     <h2 className="text-accent hover:underline font-title mb-2">{props.title}</h2>
+                     <h1 className="text-accent hover:underline font-title mb-2">{props.title}</h1>
                    </Link>
                </div>
              </div>
