@@ -76,7 +76,7 @@ const PostContent: React.FC<PostContentProps> = ({ posts }) => {
                 </p>
               </CardBody>
               <CardFooter className="text-small justify-between">
-                <a className="hover:underline text-accent" href="https://itodyssey.dev/now" rel="external nofollow noopener" target="_blank">Now Page</a>
+                <a className="hover:underline text-accent" href="/now" rel="external nofollow noopener">Now Page</a>
               </CardFooter>
             </Card>
 
