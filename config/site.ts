@@ -21,6 +21,10 @@ export const siteConfig = {
     {
       label: "About",
       href: "/about",
+    },
+    {
+      label: "Now",
+      href: "/now",
     }
 	],
 };

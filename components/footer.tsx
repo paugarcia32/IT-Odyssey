@@ -26,7 +26,7 @@ export default function Footer(){
               <h1 className="mb-5 text-lg subpixel-antialiased font-bold font-title">Learn more</h1>
               <a href="/resources" className="pointer text-sm hover:text-accent my-2.5">Resources</a>
               <a href="/FAQ" className="pointer text-sm hover:text-accent my-2.5">FAQ</a>
-
+              <a href="/now" className="pointer text-sm hover:text-accent my-2.5">Now</a>
             </div>
 
             <div className="w-1/2 md:w-40 m-1 flex flex-col justify-start min-w-max">

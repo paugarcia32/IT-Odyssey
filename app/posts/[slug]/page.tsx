@@ -6,6 +6,8 @@ import TOC from "@/components/TOC"
 import { SearchIcon, TagIcon } from '@/components/icons';
 import { Chip, Image, Divider } from '@nextui-org/react';
 import DownloadButton from "@/components/downloadButton";
+import { PostMetadata } from "@/components/PostMetadata";
+import PostPreview from "@/components/PostPreview";
 
 const getPostContent = (slug: string) => {
   const folder = "posts/";
@@ -22,17 +24,46 @@ export const generateStaticParams = async () => {
   }));
 };
 
+
+const RelatedPostsSection = ({ relatedPosts }: { relatedPosts: PostMetadata[] }) => {
+  return (
+    <div className="mt-10 text-center items-center">
+      <h1 className="text-2xl font-title font-semibold mb-4">Related Posts</h1>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        {relatedPosts.map((relatedPost: PostMetadata) => (
+          <PostPreview key={relatedPost.slug} {...relatedPost} />
+        ))}
+      </div>
+    </div>
+  );
+};
+
+const getRelatedPosts = (tags: string[], currentSlug: string) => {
+  const allPosts = getPostMetadata();
+  const relatedPosts = allPosts.filter(
+    (post) => post.slug !== currentSlug && post.tags.some((tag) => tags.includes(tag))
+  );
+  return relatedPosts.slice(0, 3);
+};
+
+
+
 const PostPage = (props: any) => {
   const slug = props.params.slug;
   const post = getPostContent(slug);
+  const relatedPosts = getRelatedPosts(post.data.tags, slug);
+
   return (
     <div className="max-w-sm md:max-w-6xl m-0 mx-auto leading-relaxed p-1.5 md:p-10 lg:p-20">
       <div className="">
         <div className="my-6 text-center items-center">
-          <h1 className="text-2xl font-title ">{post.data.title}</h1>
-          <p className="text-slate-400 mt-2">{post.data.date}</p>
-        </div>
+          <h1 className="text-2xl font-title mb-4">{post.data.title}</h1>
+          <div className="max-w-md mx-auto text-center">
+            <p className="text-slate-300 mt-2 text-sm">{post.data.subtitle}</p>
+            <p className="text-slate-300 mt-2 text-sm">{post.data.date}</p>
+          </div>
 
+        </div>
         <div className="md:flex md:mt-10">
           <div className="md:w-1/4">
             <div className="md:sticky md:top-12">
@@ -65,6 +96,9 @@ const PostPage = (props: any) => {
             <div className="">
               <DownloadButton slug={slug} />
             </div>
+          </div>
+          <div className="m-0 mx-auto leading-relaxed px-1.5 md:px-10 lg:px-20">
+            {relatedPosts.length > 0 && <RelatedPostsSection relatedPosts={relatedPosts} />}
           </div>
       </div>
     </div>
