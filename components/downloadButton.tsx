@@ -8,9 +8,7 @@ interface DownloadButtonProps {
 }
 
 const DownloadButton = (props: DownloadButtonProps) => {
-  const baseURL = 'https://www.itodyssey.dev';
-  // const baseURL = process.env.BASE_URL;
-  const PDFFile = `${baseURL}/docs/${props.slug}.pdf`;
+  const PDFFile = `/docs/${props.slug}.pdf`;
 
 
   const downloadPDF = (url: string) => {
