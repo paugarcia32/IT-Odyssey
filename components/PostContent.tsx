@@ -3,9 +3,8 @@
 import React, { useState } from 'react';
 import { PostMetadata } from './PostMetadata';
 import PostPreview from './PostPreview';
-import { Input, Pagination, Select, SelectItem, Listbox, ListboxItem, Card, CardHeader, CardBody, CardFooter, Avatar, Button } from "@nextui-org/react";
+import { Input, Pagination, Select, SelectItem, Card, CardHeader, CardBody, CardFooter, Avatar, Button } from "@nextui-org/react";
 import { SearchIcon, TagIcon } from './icons';
-import { ListboxWrapper } from './ListboxWrapper';
 
 interface PostContentProps {
   posts: PostMetadata[];
@@ -60,7 +59,7 @@ const PostContent: React.FC<PostContentProps> = ({ posts }) => {
         <div className="md:w-1/4 mx-8 md:mx-4">
           <div className='md:mt-10 hidden md:block'>
 
-            <Card className="py-4">
+            <Card shadow="sm" className="py-4 border-none bg-secondary-50 dark:bg-secondary">
               <CardHeader className="justify-between">
                 <div className="flex gap-5">
                   <Avatar isBordered radius="full" size="md" src="profile.jpg" />
@@ -118,52 +117,7 @@ const PostContent: React.FC<PostContentProps> = ({ posts }) => {
         </div>
       </div>
     </div>
-
-
-      {/* <div className='md:flex md:flex-row grid grid-cols-1 mx-10 md:mx-0 justify-items-center md:justify-between items-center text-center'>
-        <Input
-          className='mb-4 md:mb-0'
-          color='default'
-          type="text"
-          placeholder="Search Posts ..."
-          startContent={
-            <SearchIcon className="text-2xl pointer-events-none flex-shrink-0 text-primary" />
-          }
-          onChange={(e) => setSearchTerm(e.target.value)}
-        />
-
-        <Select
-          className="md:ml-4"
-          color='default'
-          placeholder="Filter by Tag"
-          value={selectedTag || ''}
-          onChange={handleTagChange}
-          startContent={
-            <TagIcon className="text-2xl pointer-events-none flex-shrink-0 text-primary" />
-          }
-        >
-          {allTags.map((tag) => (
-            <SelectItem key={`${tag}`} value={tag}>
-              {tag}
-            </SelectItem>
-          ))}
-        </Select>
-      </div> */}
-      {/* <div className="grid grid-cols-1 md:grid-cols-2 md:max-w-2xl gap-4 my-10">
-        {currentPosts.map((post) => (
-          <PostPreview key={post.slug} {...post} />
-        ))}
-      </div> */}
-      {/* <div className="flex justify-center">
-        <Pagination
-          isCompact
-          showControls
-          total={totalPages}
-          initialPage={1}
-          onChange={setCurrentPage}
-        />
-      </div> */}
-    </div>
+  </div>
   );
 };
 

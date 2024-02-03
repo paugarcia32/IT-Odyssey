@@ -25,6 +25,8 @@ export const generateStaticParams = async () => {
 };
 
 
+
+
 const RelatedPostsSection = ({ relatedPosts }: { relatedPosts: PostMetadata[] }) => {
   return (
     <div className="mt-10 text-center items-center">
@@ -82,7 +84,7 @@ const PostPage = (props: any) => {
 
           <div className="md:w-3/4 md:pl-8">
             <article
-            className="prose dark:prose-invert prose:font-body prose-headings:font-title prose-headings:font-bold prose-h2:text-2xl prose-h2:mt-7.5 prose-h2:mb-2.5 prose-h3:text-xl prose-h3:mt-6 prose-h3:mb-2 prose-h4:text-lg prose-h4:mt-5 prose-h4:mb-1.5 prose-a:text-accent hover:prose-a:underline prose-a:no-underline"
+            className="prose dark:prose-invert prose:font-body prose-headings:font-title prose-headings:font-bold prose-h2:text-2xl prose-h2:mt-7.5 prose-h2:mb-2.5 prose-h3:text-xl prose-h3:mt-6 prose-h3:mb-2 prose-h4:text-lg prose-h4:mt-5 prose-h4:mb-1.5 prose-a:text-accent hover:prose-a:underline prose-a:no-underline prose-img:mx-auto"
             >
             <Markdown>{post.content}</Markdown>
           </article>

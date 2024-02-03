@@ -20,17 +20,16 @@ const handleSelectionChange = (key: Key) => {
 };
   // useScrollToTop();
   return (
-    <div className="max-w-4xl m-0 mx-auto leading-relaxed p-2 md:p-10 lg:p-20 font-body">
+    <div className="max-w-4xl m-0 mx-auto leading-relaxed p-2.5 md:p-10 lg:p-20 font-body">
       <section className="bg-background min-h-screen items-center">
-        <div className="grid lg:flex">
-          <div className="mb-10">
-                <Image
-                // isBlurred
-                height={400}
-                src="profile.jpg"
-                alt="NextUI Album Cover"
-                className="max-w-sm md:max-w-md lg:max-w-lg "
-              />
+        <div className="grid lg:flex items-center justify-center">
+          <div className="flex flex-col mb-10 max-w-lg min-w-lg items-center">
+            <Image
+            height={400}
+            src="profile.jpg"
+            alt="NextUI Album Cover"
+            className="max-w-sm md:max-w-md lg:max-w-lg mx-auto"
+            />
           </div>
           <div className="flex max-w-lg min-w-lg flex-col items-center lg:ml-10">
             <Tabs
