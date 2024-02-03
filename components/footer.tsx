@@ -37,7 +37,7 @@ export default function Footer(){
             </div>
 
         </div>
-        <div className="text-sm mt-2 text-center">
+        <div className="text-sm mt-5 text-center">
           <p>@{new Date().getFullYear()} <a href="/about" className="pointer hover:text-accent hover:underline">Pau Garcia</a>. All rights reserved.</p>
         </div>
 
