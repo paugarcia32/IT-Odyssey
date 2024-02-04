@@ -24,7 +24,7 @@ const Resources = () => {
 
 
   return (
-    <div className="md:max-w-3xl lg:max-w-6xl m-0 mx-auto leading-relaxed p-2 md:p-10 lg:p-20 font-body">
+    <div className="w-screen md:max-w-3xl lg:max-w-6xl m-0 mx-auto leading-relaxed p-2.5 md:p-10 lg:p-20 font-body">
       <h1 className="text-4xl font-bold mb-5 font-title">Resources</h1>
       <div className="w-20 text-left h-0.5 bg-accent mb-5"></div>
       <div className="md:flex md:mt-10">
