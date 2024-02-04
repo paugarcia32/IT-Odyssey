@@ -50,10 +50,10 @@ export default function Contact() {
         <ContactForm/>
       </div>
 
-      <div className="flex flex-col md:flex-row gap-5 my-20 justify-center">
+      <div className="flex flex-col md:flex-row gap-5 my-20 ">
         <Card
           isBlurred
-          className="border-none bg-background/60 dark:bg-default-100/50 max-w-50"
+          className="border-none bg-background/60 dark:bg-default-100/50 mx-20 md:mx-5"
           shadow="sm"
         >
           <CardBody>
@@ -74,7 +74,7 @@ export default function Contact() {
         <a href="https://www.linkedin.com/in/pau-garcia-513817287/">
           <Card
           isBlurred
-          className="border-none bg-background/60 dark:bg-default-100/50"
+          className="border-none bg-background/60 dark:bg-default-100/50 mx-20 md:mx-1"
           shadow="sm"
         >
           <CardBody>
@@ -96,7 +96,7 @@ export default function Contact() {
         <a href="https://github.com/paugarcia32">
           <Card
           isBlurred
-          className="border-none bg-background/60 dark:bg-default-100/50"
+          className="border-none bg-background/60 dark:bg-default-100/50 mx-20 md:mx-5"
           shadow="sm"
         >
           <CardBody>
