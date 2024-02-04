@@ -27,7 +27,7 @@ export default function Contact() {
   ];
 
   return (
-    <div className="max-w-4xl m-0 mx-auto leading-relaxed p-2 md:p-10 lg:p-20">
+    <div className="w-screen max-w-4xl m-0 mx-auto leading-relaxed p-2.5 md:p-10 lg:p-20">
       <h1 className="text-4xl font-bold mb-5 font-title">Get In Touch</h1>
       <div className="w-20 text-left h-0.5 bg-accent mb-5"></div>
       <div className="flex flex-col md:flex-row gap-5 mb-5 w-full">
