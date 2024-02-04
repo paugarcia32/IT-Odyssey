@@ -45,7 +45,7 @@ const PostContent: React.FC<PostContentProps> = ({ posts }) => {
     <div className='max-w-6xl'>
       <div className='flex justify-center'>
         <Input
-              className='mb-4 max-w-xl'
+              className='mb-4 max-w-xl mx-8'
               color='default'
               type="text"
               placeholder="Search Posts ..."

@@ -56,7 +56,7 @@ const PostPage = (props: any) => {
   const relatedPosts = getRelatedPosts(post.data.tags, slug);
 
   return (
-    <div className="max-w-sm md:max-w-6xl m-0 mx-auto leading-relaxed p-1.5 md:p-10 lg:p-20">
+    <div className="max-w-sm md:max-w-6xl m-0 mx-auto leading-relaxed p-2.5 md:p-10 lg:p-20">
       <div className="">
         <div className="my-6 text-center items-center">
           <h1 className="text-2xl font-title mb-4">{post.data.title}</h1>
