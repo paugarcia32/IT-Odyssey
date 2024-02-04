@@ -76,25 +76,25 @@ const Resources = () => {
 
           <div className="mb-10">
             <div className="md:flex md:flex-row grid grid-cols-2 justify-items-center md:justify-between items-center text-center mt-10">
-              <Card shadow="sm" className="w-30 xl:w-36 h-36 mb-10 bg-primary rounded-lg flex">
+              <Card shadow="sm" className="w-32 h-32 mb-10 bg-primary rounded-lg flex">
                   <CardBody className="justify-center items-center  text-center font-bold">
                     <p>Primary</p>
                   </CardBody>
                 </Card>
 
-                <Card shadow="sm" className="w-30 xl:w-36 h-36 mb-10 bg-accent rounded-lg flex ">
+                <Card shadow="sm" className="w-32 h-32 mb-10 bg-accent rounded-lg flex ">
                   <CardBody className="justify-center items-center  text-center font-bold">
                     <p>Accent</p>
                   </CardBody>
                 </Card>
 
-                <Card shadow="sm" className="w-30 xl:w-36 h-36 mb-10 bg-secondary rounded-lg flex">
+                <Card shadow="sm" className="w-32 h-32 mb-10 bg-secondary rounded-lg flex">
                   <CardBody className="justify-center items-center  text-center font-bold">
                     <p>Secondary</p>
                   </CardBody>
                 </Card>
 
-                <Card shadow="sm" className="w-30 xl:w-36 h-36 mb-10 bg-background rounded-lg flex ">
+                <Card shadow="sm" className="w-32 h-32 mb-10 bg-background rounded-lg flex ">
                   <CardBody className="justify-center items-center  text-center font-bold">
                     <p>Background</p>
                   </CardBody>
