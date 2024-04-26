@@ -27,7 +27,7 @@ export default function Contact() {
   ];
 
   return (
-    <div className="max-w-4xl m-0 mx-auto leading-relaxed p-2 md:p-10 lg:p-20">
+    <div className="w-screen max-w-4xl m-0 mx-auto leading-relaxed p-2.5 md:p-10 lg:p-20">
       <h1 className="text-4xl font-bold mb-5 font-title">Get In Touch</h1>
       <div className="w-20 text-left h-0.5 bg-accent mb-5"></div>
       <div className="flex flex-col md:flex-row gap-5 mb-5 w-full">
@@ -50,10 +50,10 @@ export default function Contact() {
         <ContactForm/>
       </div>
 
-      <div className="flex flex-col md:flex-row gap-5 my-20 justify-center">
+      <div className="flex flex-col md:flex-row gap-5 my-20 ">
         <Card
           isBlurred
-          className="border-none bg-background/60 dark:bg-default-100/50 max-w-50"
+          className="border-none bg-background/60 dark:bg-default-100/50 mx-20 md:mx-5"
           shadow="sm"
         >
           <CardBody>
@@ -74,7 +74,7 @@ export default function Contact() {
         <a href="https://www.linkedin.com/in/pau-garcia-513817287/">
           <Card
           isBlurred
-          className="border-none bg-background/60 dark:bg-default-100/50"
+          className="border-none bg-background/60 dark:bg-default-100/50 mx-20 md:mx-1"
           shadow="sm"
         >
           <CardBody>
@@ -96,7 +96,7 @@ export default function Contact() {
         <a href="https://github.com/paugarcia32">
           <Card
           isBlurred
-          className="border-none bg-background/60 dark:bg-default-100/50"
+          className="border-none bg-background/60 dark:bg-default-100/50 mx-20 md:mx-5"
           shadow="sm"
         >
           <CardBody>

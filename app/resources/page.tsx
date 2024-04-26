@@ -24,7 +24,7 @@ const Resources = () => {
 
 
   return (
-    <div className="md:max-w-3xl lg:max-w-6xl m-0 mx-auto leading-relaxed p-2 md:p-10 lg:p-20 font-body">
+    <div className="w-screen md:max-w-3xl lg:max-w-6xl m-0 mx-auto leading-relaxed p-2.5 md:p-10 lg:p-20 font-body">
       <h1 className="text-4xl font-bold mb-5 font-title">Resources</h1>
       <div className="w-20 text-left h-0.5 bg-accent mb-5"></div>
       <div className="md:flex md:mt-10">
@@ -41,55 +41,60 @@ const Resources = () => {
             <p className="mb-4">
             In this project, we have used <a className="text-accent hover:underline" href="https://nextjs.org/">NextJS</a> with <a className="text-accent hover:underline" href="https://www.typescriptlang.org/">Typescript</a>. Also, we have used <a className="text-accent hover:underline" href="https://nextui.org/">Next UI</a> for some nice looking UI components combined with <a className="text-accent hover:underline" href="https://tailwindcss.com/">Tailwind CSS</a>.
             </p>
-            <div className="flex flex-col items-center ">
+
+
+            <div className="grid grid-cols-2 md:grid-cols-4 mx-auto">
+              <div className="flex flex-col items-center mx-auto">
               <a className="hover:text-accent" href="https://nextjs.org/">
                 <SiNextdotjs size={48} />
               </a>
               <p>Next.js</p>
             </div>
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center mx-auto">
               <a className="hover:text-accent hover:underline" href="https://www.typescriptlang.org/">
                 <SiTypescript size={48} />
               </a>
               <p>Typescript</p>
             </div>
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center mx-auto">
               <a className="hover:text-accent hover:underline" href="https://tailwindcss.com/">
                 <SiTailwindcss size={48} />
               </a>
               <p>Tailwind CSS</p>
             </div>
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center mx-auto">
               <a className="hover:text-accent hover:underline" href="https://nextui.org/">
                 <SiNextui size={48} />
               </a>
               <p>Next UI</p>
             </div>
+            </div>
+
           </div>
           <h2 className="text-2xl font-bold mt-7.5 mb-2.5 font-title">Styles</h2>
           <h3 className="text-xl font-bold mt-7.5 mb-2.5 font-title">Color Palette</h3>
 
           <div className="mb-10">
             <div className="md:flex md:flex-row grid grid-cols-2 justify-items-center md:justify-between items-center text-center mt-10">
-              <Card shadow="sm" className="w-30 xl:w-36 h-36 mb-10 bg-primary rounded-lg flex">
+              <Card shadow="sm" className="w-32 h-32 mb-10 bg-primary rounded-lg flex">
                   <CardBody className="justify-center items-center  text-center font-bold">
                     <p>Primary</p>
                   </CardBody>
                 </Card>
 
-                <Card shadow="sm" className="w-30 xl:w-36 h-36 mb-10 bg-accent rounded-lg flex ">
+                <Card shadow="sm" className="w-32 h-32 mb-10 bg-accent rounded-lg flex ">
                   <CardBody className="justify-center items-center  text-center font-bold">
                     <p>Accent</p>
                   </CardBody>
                 </Card>
 
-                <Card shadow="sm" className="w-30 xl:w-36 h-36 mb-10 bg-secondary rounded-lg flex">
+                <Card shadow="sm" className="w-32 h-32 mb-10 bg-secondary rounded-lg flex">
                   <CardBody className="justify-center items-center  text-center font-bold">
                     <p>Secondary</p>
                   </CardBody>
                 </Card>
 
-                <Card shadow="sm" className="w-30 xl:w-36 h-36 mb-10 bg-background rounded-lg flex ">
+                <Card shadow="sm" className="w-32 h-32 mb-10 bg-background rounded-lg flex ">
                   <CardBody className="justify-center items-center  text-center font-bold">
                     <p>Background</p>
                   </CardBody>
@@ -142,7 +147,7 @@ const Resources = () => {
           <h3 className="text-xl font-bold mt-7.5 mb-2.5 font-title">Fonts Used</h3>
           <div className="flex flex-col md:flex-row justify-between items-center mt-10">
             {typographyData.map((typography, index) => (
-              <Card key={index} shadow="sm" className="min-w-[250px]  w-[300] min-h-[100px] mb-10 md:mx-10">
+              <Card key={index} shadow="sm" className="min-w-[250px]  w-[300] min-h-[100px] mb-10 md:mx-1 lg:mx-10">
                 <CardBody className="overflow-visible p-0">
                   <div className="flex items-center justify-center mb-1">
                     <div className="mt-0.5">

@@ -25,6 +25,8 @@ export const generateStaticParams = async () => {
 };
 
 
+
+
 const RelatedPostsSection = ({ relatedPosts }: { relatedPosts: PostMetadata[] }) => {
   return (
     <div className="mt-10 text-center items-center">
@@ -54,7 +56,7 @@ const PostPage = (props: any) => {
   const relatedPosts = getRelatedPosts(post.data.tags, slug);
 
   return (
-    <div className="max-w-sm md:max-w-6xl m-0 mx-auto leading-relaxed p-1.5 md:p-10 lg:p-20">
+    <div className="w-screen max-w-sm md:max-w-6xl m-0 mx-auto leading-relaxed p-2.5 md:p-10 lg:p-20">
       <div className="">
         <div className="my-6 text-center items-center">
           <h1 className="text-2xl font-title mb-4">{post.data.title}</h1>
@@ -82,7 +84,7 @@ const PostPage = (props: any) => {
 
           <div className="md:w-3/4 md:pl-8">
             <article
-            className="prose dark:prose-invert prose:font-body prose-headings:font-title prose-headings:font-bold prose-h2:text-2xl prose-h2:mt-7.5 prose-h2:mb-2.5 prose-h3:text-xl prose-h3:mt-6 prose-h3:mb-2 prose-h4:text-lg prose-h4:mt-5 prose-h4:mb-1.5 prose-a:text-accent hover:prose-a:underline prose-a:no-underline"
+            className="prose dark:prose-invert prose:font-body prose-headings:font-title prose-headings:font-bold prose-h2:text-2xl prose-h2:mt-7.5 prose-h2:mb-2.5 prose-h3:text-xl prose-h3:mt-6 prose-h3:mb-2 prose-h4:text-lg prose-h4:mt-5 prose-h4:mb-1.5 prose-a:text-accent hover:prose-a:underline prose-a:no-underline prose-img:mx-auto"
             >
             <Markdown>{post.content}</Markdown>
           </article>
