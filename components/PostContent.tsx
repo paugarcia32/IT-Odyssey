@@ -1,9 +1,9 @@
 /* eslint-disable react/no-unescaped-entities */
 'use client'
-import React, { useState } from 'react';
+import React, { useState, ChangeEventHandler  } from 'react';
 import { PostMetadata } from './PostMetadata';
 import PostPreview from './PostPreview';
-import { Input, Pagination, Select, SelectItem, Card, CardHeader, CardBody, CardFooter, Avatar, Button } from "@nextui-org/react";
+import { Input, Pagination, Select, SelectItem, Card, CardHeader, CardBody, CardFooter, Avatar } from "@nextui-org/react";
 import { SearchIcon, TagIcon } from './icons';
 
 interface PostContentProps {
@@ -20,7 +20,7 @@ const PostContent: React.FC<PostContentProps> = ({ posts }) => {
 
   const allTags = Array.from(new Set(posts.flatMap(post => post.tags)));
 
-  const handleTagChange: React.ChangeEventHandler<HTMLSelectElement> = (e) => {
+  const handleTagChange: ChangeEventHandler<HTMLSelectElement> = (e) => {
     const val = e.target.value;
     setSelectedTag(val === '' ? undefined : val);
     setCurrentPage(1);
